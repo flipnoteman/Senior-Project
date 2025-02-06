@@ -34,12 +34,12 @@ IMPORTANT: Make sure that you are inside the virtual environment before proceedi
 To install all the necessary packages run the following command:
 
 ```commandline
-pip install -r requirments.txt
+pip install -r requirements.txt
 ```
 
 ### _Running the App_
 
-Once your virtual environment and required packages are installed, run the following from
+Once your virtual environment and required packages are installed, run the following
 while your venv is active from within the ```nfina_benchmark_app``` directory:
 
 ```commandline
