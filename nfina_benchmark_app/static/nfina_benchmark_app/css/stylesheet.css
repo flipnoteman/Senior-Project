@@ -1,0 +1,362 @@
+/* .container {
+  overflow: auto;
+  min-width: 75vw;
+} */
+.addFieldIcon {
+    cursor:pointer;
+    float:right;
+    color:#1E63AF;
+    font-size:20px;
+  }
+  area {
+    cursor:pointer;
+  }
+  .base {
+    min-height: 100vh;
+    display: flex;
+  }
+  .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color:#1163A9 !important;
+    background-color: white !important;
+  }
+  .btn-primary {
+    background-color: #1577cd !important;
+  }
+  .btn-outline-primary.active {
+    background-color: #1577cd !important;
+  }
+  .btn-group .btn-check:checked + .btn {
+    background-color: #1577cd !important;
+  }
+  .btn-outline-primary {
+    outline-color: #1577cd !important;
+  }
+  .btn-outline-primary:hover {
+    outline-color: #1577cd !important;
+    color: #ffffff !important;
+  }
+  .btn-outline-primary:not(.active):hover {
+    background-color: #1577cd !important;
+  }
+  .borderedText {
+    border:1px solid #1E63AF; 
+    background-color: #1E63AF;
+    padding: 2%; 
+  }
+  .borderedMainText {
+    border:1px solid #1E63AF; 
+    padding: 1%; 
+    border-radius: 10px;
+    width:25%;
+  }
+  /* canvas {
+    background-image: url('../img/backplane.png');
+  } */
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Caption text for tables. Bootstrap has captions set to appear at the bottom by default. */
+  .captionText {
+    color: green;
+    caption-side: top;
+    text-align: center;
+    /* font-size : 20px; */
+  }
+  .clickable {
+    cursor: pointer;
+  }
+  .component_table {
+    visibility: hidden;
+    min-width:30%;
+    max-width:40%;
+  }
+  .checkInForm {
+    float:left;
+  }
+  .deleteFieldButton {
+    cursor:pointer;
+    color:red;
+    float:right;
+  }
+  #componentTable_wrapper {
+    overflow: auto;
+  }
+  .errorClass { 
+    border:  1px solid red; 
+  }
+  .formHeaderText {
+    text-align:center;
+    color:#1E63AF;
+  }
+  .fileLink {
+    cursor:pointer;
+    color: white;
+  }
+  .bomLink {
+    cursor:pointer;
+    color: white;
+  }
+  #fileTable > tbody > tr > td{
+    text-align: left !important;
+  }
+  .fileDeleteButton {
+    cursor:pointer; 
+    color:red; 
+    padding-left:5px;
+  }
+  .hiddenField {
+    display:none;
+  }
+  
+  header {
+    margin-bottom: 2%;
+  }
+  .helpText {
+    float:left;
+    color:white;
+    margin-bottom: 3%;
+  }
+  #hint_id_username, #hint_id_password {
+    color:white !important;
+  }
+  
+  hr {
+      border-top: 1px solid #b8bbbe !important;
+  }
+  
+  img {
+    max-width: 50%;
+    height: auto;
+    width: auto\9; /* ie8 */ 
+  }
+  
+  .inputField {
+    margin-bottom:2%;
+  }
+  
+  .login_form {
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:5%;
+    width:500px;
+    background-color: white;
+  }
+
+  li.pcie_list {
+    cursor: pointer;
+    color:#1E63AF;
+  }
+  main {
+    padding-bottom: 25px;
+    margin-left: 240px;
+    width: 100%;  
+  }
+  main > header {
+      /* On smaller displays, make it take 75% of the parent container so that as the header is
+         shruken, the chevron image isn't proportionally shrunken to the point where you can see the
+         bottom and top part of the image */
+      background: hsl(208, 82%, 40%) url('/static/img/chevron.svg') no-repeat right;
+      min-height: 100px;
+    width:100%;
+      /* margin-left: 240px; */
+  }
+  main > header > h1 {
+    color: white;
+    padding-top:25px;
+    padding-left:3%;
+  }
+  .mainText {
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    margin-top:3%;
+    margin-bottom:2%;
+  }
+  
+  .modal-header {
+    background-color: #126cba;
+  }
+  .modal-title {
+    color: white;
+  }
+  .requiredField {
+    color:rgb(10, 13, 231);
+  }
+  #selectDate {
+    z-index: auto !important;
+  }
+  table {
+    overflow:auto;
+  }
+  table.pcieTable {
+    margin-top: 5%;
+  }
+  table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+  td, th, tr {
+    text-align: center;
+  }
+  th {
+    background-color: #1163A9;
+    color: white;
+    /* border: 1px solid #1E63AF !important;
+    color: #1E63AF; */
+  }
+  /* Style the tab */
+  .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+  }
+  .tabRow {
+    display:flex;
+    justify-content: center;
+  }
+  .tableWidth {
+    /* width:80%; */
+    width:1200px;
+  }
+  
+  .ui-datepicker-inline {
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  #userFormButtonsMargin{
+    margin-bottom:0% !important;
+  }
+  
+  .userFormMargin {
+    margin-top:20px;
+  }
+  .userForm {
+    border:1px solid #1E63AF; 
+    padding: 20px; 
+    background-color: #126cba;
+  }
+  .workorderTableDiv {
+    margin-left:auto;
+    margin-right:auto;
+  }
+  #workorderContainerFluid{
+    padding-left:3%; 
+    padding-right:3%;
+  }
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+      /* display: none; <- Crashes Chrome on hover */
+      -webkit-appearance: none;
+      margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  }
+  
+  input[type=number] {
+      -moz-appearance:textfield; /* Firefox */
+  }
+  
+  .vertical-line {
+    border-right: 1px solid white;
+    height: 100%;
+  }
+  
+  .close {
+    opacity: 1 !important;
+    text-shadow: none !important;
+    color:white !important;
+  }
+  
+  .yellow-text {
+    color:yellow;
+  }
+  
+  .edit-pencil {
+    cursor:pointer;
+    color:yellow;
+  }
+  
+  input.filter_placeholder::placeholder{
+    color: white;
+    text-align: center;
+    opacity: 0.8;
+  }
+  
+  button.active{
+    color: white !important;
+    background-color: #1577cd !important;
+  }
+  .status-caption {
+  color: #007bff;
+  font-size: 25px;
+  font-weight: bold;
+  }
+  .content-section
+  {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+  }
+  .theme-text
+  {
+    color: #1E63AF !important;
+  }
+
+  #markdown-container {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  #markdown-container h1 {
+    font-size: 2em;
+    margin-top: 0.5em;
+  }
+
+  #markdown-container a {
+    color: blue;
+    text-decoration: none;
+  }
+
+  #markdown-container a:hover {
+    text-decoration: underline;
+  }
+
+  .breadcrumb-link {
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.breadcrumb-link:hover {
+    text-decoration: underline;
+}
+
+#current-directory {
+    font-size: 16px;
+    margin-bottom: 10px;
+}

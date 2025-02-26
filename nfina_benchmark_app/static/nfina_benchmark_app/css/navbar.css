@@ -1,0 +1,26 @@
+/* Show it is fixed to the top */
+
+.navbar {
+    top:0;
+    background-color: #1163A9; 
+    z-index: 300;
+    padding: 0;
+    box-shadow: 0 0 5px 0 #0a3932;
+    position:sticky;
+  }
+  
+  .navbar > span.navbar-brand {
+    top:0;
+    /* background-color: #0d4e85; */
+    padding-left: 15px;
+    /* width: 10%; */
+    width: 240px;
+    /* max-width: 300px; */
+    max-height: 70px;
+  }
+  
+  
+  /* body {
+    height: 60px;
+    padding-top: 2.5rem;
+  } */

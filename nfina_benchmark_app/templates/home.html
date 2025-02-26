@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Nfina AI</title>
+
+    {% load static %}
+    {% load django_bootstrap5 %}
+
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+
+    <!-- CSS -->
+    <link href="{% static 'nfina_benchmark_app/css/stylesheet.css' %}" rel="stylesheet">
+    <link href="{% static 'nfina_benchmark_app/css/navbar.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <a href="https://nfina.com/" class="navbar-brand p-2">
+            <span class="text-light">Nfina AI</span>
+        </a>
+    </nav>
+
+    <div class="base">
+        <!-- Sidebar -->
+        <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 280px;">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <span class="fs-3">Nfina AI</span>
+            </a>
+        </div>
+        <!-- End Sidebar -->
+
+        <!-- Main Content -->
+        <main style="margin-left: 50px;">
+            <div style="margin-top: 10px;">
+                <!-- Nav Tabs -->
+                <ul class="nav nav-tabs" id="home_tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="docker-tab" data-bs-toggle="tab" data-bs-target="#docker" type="button" role="tab" aria-controls="docker" aria-selected="false">
+                            Docker
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Tab Content -->
+                <div class="tab-content" id="home_tab_content">
+                    <!-- Docker Tab -->
+                    <div class="tab-pane fade show active" id="docker" role="tabpanel" aria-labelledby="docker-tab">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row" style="margin-top: 10px;">
+                                    <div class="col-auto">
+                                        <h1>Docker Monitor</h1>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <iframe 
+                                        id="docker_dashboard"
+                                        style="width: 95%; height: 90vh; border: none; display: block; margin: 0 auto;"
+                                        src="http://localhost:3000/d/docker-monitor/docker-monitor?orgId=1&from=now-1h&to=now&timezone=browser&refresh=10s&theme=light&kiosk">
+                                    </iframe>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
