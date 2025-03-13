@@ -1,0 +1,31 @@
+services:
+  db:
+    image: mysql:latest
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: pass
+      MYSQL_DATABASE: nfinadb
+      MYSQL_USER: user
+      MYSQL_PASSWORD: pass
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - nfina_net
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./nfina_benchmark_app:/usr/src/app
+    networks:
+      - nfina_net
+volumes:
+  mysql_data:
+    driver: local
+networks:
+  nfina_net:
+    driver: bridge

@@ -2,8 +2,9 @@
 _______
 
 ## How to use project
+### _Using Docker-Compose_
 
-### _Venv Setup_
+### _Using Venv Setup_
 First make sure that Python is installed on your system
 
 This project uses venv to deploy the web app. In oder to generate a virtual environment, run the following command
